@@ -940,19 +940,19 @@ class "MapPosition" -- {
 	function MapPosition:onTopLane(unit)
 		unitPoint = Point(unit.x, unit.z)
 
-		return regions["leftTopLane"]:contains(unitPoint) or regions["centerTopLane"]:contains(unitPoint) or regions["rightTopLane"]:__contains(unitPoint)
+		return regions["leftTopLane"]:__contains(unitPoint) or regions["centerTopLane"]:__contains(unitPoint) or regions["rightTopLane"]:__contains(unitPoint)
 	end
 
 	function MapPosition:onMidLane(unit)
 		unitPoint = Point(unit.x, unit.z)
 
-		return regions["leftMidLane"]:contains(unitPoint) or regions["centerMidLane"]:contains(unitPoint) or regions["rightMidLane"]:__contains(unitPoint)
+		return regions["leftMidLane"]:__contains(unitPoint) or regions["centerMidLane"]:__contains(unitPoint) or regions["rightMidLane"]:__contains(unitPoint)
 	end
 
 	function MapPosition:onBotLane(unit)
 		unitPoint = Point(unit.x, unit.z)
 
-		return regions["leftBotLane"]:contains(unitPoint) or regions["centerBotLane"]:contains(unitPoint) or regions["rightBotLane"]:__contains(unitPoint)
+		return regions["leftBotLane"]:__contains(unitPoint) or regions["centerBotLane"]:__contains(unitPoint) or regions["rightBotLane"]:__contains(unitPoint)
 	end
 
 	-- Jungle Positions -------------------------------------------------------
